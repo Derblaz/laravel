@@ -19,7 +19,7 @@ services:
         entrypoint: dockerize -template .docker/nginx/nginx.tmpl:/etc/nginx/conf.d/nginx.conf nginx -g 'daemon off;'
         environment:
             - HOST=app
-            - PORT=9001
+            - PORT=9000
         restart: always
         tty: true
         ports:
